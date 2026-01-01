@@ -1,0 +1,29 @@
+model:
+  model_name: klue/roberta-base
+  num_labels: 7
+
+data:
+  train_csv: data/process/train_hatescore_unsmile.csv
+  valid_csv: data/process/unsmile_valid.csv
+  text_col: 문장
+  label_cols:
+    - 여성/가족
+    - 남성
+    - 성소수자
+    - 인종/국적
+    - 연령
+    - 지역
+    - 종교
+    - 기타혐오
+    - 악플/욕설
+  max_len: 128
+
+train:
+  batch_size: 32
+  epochs: 10
+  lr: 2e-5
+
+runtime:
+  save_dir: checkpoints
+  save_last: checkpoints/last.pt
+  save_best: checkpoints/best.pt

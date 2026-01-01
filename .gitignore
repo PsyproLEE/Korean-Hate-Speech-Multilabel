@@ -1,0 +1,68 @@
+############################
+# Python
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+############################
+# Virtual Environments
+############################
+.venv/
+venv/
+env/
+conda-env/
+
+############################
+# IDE / Editor
+############################
+.vscode/
+.idea/
+*.swp
+*.swo
+
+############################
+# OS
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Training Artifacts
+############################
+checkpoints/
+logs/
+tensorboard/
+wandb/
+
+############################
+# Augmentation / Generated Data
+############################
+augment/data/*.csv
+augment/data/*.json
+
+############################
+# Baseline Data (processed / generated)
+############################
+baseline/data/process/*
+baseline/data/rawdata/*
+
+############################
+# Model Outputs
+############################
+*.pt
+*.pth
+*.ckpt
+
+############################
+# Experiment Outputs
+############################
+results/
+outputs/
+
+############################
+# Cache / Temp
+############################
+.cache/
+tmp/
