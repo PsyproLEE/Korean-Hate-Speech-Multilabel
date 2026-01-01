@@ -97,7 +97,10 @@ All data-dependent artifacts can be fully reproduced using the provided preproce
 - **UnSmile Dataset**  
   A publicly released Korean hate speech dataset containing multiple categories of offensive and hateful expressions in Korean.
 
-The dataset is used strictly for research and experimental purposes.  
+- **HateScore Dataset**  
+  A Korean multi-label online hate speech dataset constructed using a Human-in-the-Loop (HITL) annotation framework, including neutral and context-sensitive samples.
+
+The datasets are used strictly for research and experimental purposes.  
 All rights to the original data belong to their respective authors.
 
 ### Notes
