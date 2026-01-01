@@ -8,8 +8,13 @@ from augment.utils import set_seed, build_dataloaders
 from augment.models.hier import HierHateModel
 from augment.core.trainer import build_optimizer_and_scheduler, train_one_epoch, evaluate
 
+from tools.torch_setup import setup_5080
+from tools.torch_init import init_torch
 
 def main():
+    setup_5080()
+    init_torch()
+
     cfg = load_config("../config/base.yaml")
     set_seed(cfg.seed)
 

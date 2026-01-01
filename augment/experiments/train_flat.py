@@ -11,6 +11,9 @@ from augment.utils import set_seed , build_dataloaders
 from augment.core.trainer import build_optimizer_and_scheduler, evaluate
 from augment.models.flat import FlatHateModel
 
+from tools.torch_setup import setup_5080
+from tools.torch_init import init_torch
+
 # -----------------------------
 # 라벨 컬럼 정의
 # -----------------------------
@@ -69,6 +72,9 @@ def main():
     # -----------------------------
     # 1. 설정 / seed / device
     # -----------------------------
+    setup_5080()
+    init_torch()
+
     cfg = load_config("../config/base.yaml")
     set_seed(cfg.seed)
 
